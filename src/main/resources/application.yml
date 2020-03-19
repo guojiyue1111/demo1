@@ -1,0 +1,23 @@
+server:
+  port: 8671
+
+spring:
+  thymeleaf:
+    cache: false
+  devtools:
+    restart:
+      enabled: true  #设置开启热部署
+      additional-paths: src/main/java #重启目录
+      exclude: WEB-INF/**
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/news
+    username: root
+    password:
+
+#配置.xml文件路径
+mybatis:
+# config-locations: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:/com/guojiyue/demo1/mapper/*.xml
+#配置模型路径
+  type-aliases-package: com.guojiyue.demo1.entity
