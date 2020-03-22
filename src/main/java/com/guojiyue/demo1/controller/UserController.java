@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Controller
 public class UserController {
-
+    // 用户控制器
     @RequestMapping("/user/list")
     public String userList(Model model) throws Exception{
         model.addAttribute("title","用户列表");
