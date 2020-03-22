@@ -17,6 +17,7 @@ import java.io.PrintWriter;
 @Controller
 @RequestMapping(value = "/kind")
 public class KindController {
+    // 数据访问类
     @Autowired
     KindMapper kindMapper;
 
